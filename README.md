@@ -1,1 +1,5 @@
+# golang-practice
+Learning and Practice Golang
+
 - mod.go  (Would you like the GitHub repo to be public or private)[https://sahuayush-my.sharepoint.com/:o:/r/personal/ayush_ayush-sahu_com1/Documents/Golang?d=w3e84e9f49bdd4e9eba95bf91703a2cb1&csf=1&web=1&e=L2zC1U]
+
