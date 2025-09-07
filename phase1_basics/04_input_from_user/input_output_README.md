@@ -1,9 +1,11 @@
 # Golang I/O (Input/Output) from User using both
 
-- fmt.Scanln (basic, easy, but limited)
-- bufio (powerful, flexible, recommended for more complex inputs).
+1. fmt.Scanln (basic, easy, but limited)
+2. bufio (powerful, flexible, recommended for more complex inputs).
+    2.1. bufio.Reader
+    2.2. bufio.Scanner
 
-1. Using fmt.Scanln:
+## 1. Using fmt.Scanln:
 - fmt.Scanln is part of Go’s fmt package, used to read input from standard input (stdin).
 - Reads user input until "first space" or "newline" i.e, ("Enter" key).
 - Automatically splits input into variables.
@@ -106,3 +108,18 @@ fmt.Scanln(&a, &b, &c)
 
 - Use Scanln when you expect fixed, space-separated single tokens.
 - Use Scanf or bufio.Reader when you need more control (multi-word strings, strict formats).
+
+
+## 2.1. Using bufio.Reader
+
+- Reads the entire line (with spaces).
+- Works with os.Stdin.
+- Usually paired with strings.TrimSpace to remove \n.
+
+
+
+
+## 2.2. Using bufio.Scanner
+
+- Scans input token by token or line by line.
+- More control than Scanln, less than Reader.
