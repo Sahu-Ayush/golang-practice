@@ -18,7 +18,7 @@ func main() {
 
 	fmt.Printf("Scanned: %d\n", n)
 	if err != nil {
-		fmt.Print(err, "\n")
+		fmt.Print(err.Error(), "\n")
 	} else {
 		fmt.Printf("Your age is %d\n", age)
 	}
