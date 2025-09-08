@@ -112,14 +112,23 @@ fmt.Scanln(&a, &b, &c)
 
 ## 2.1. Using bufio.Reader
 
-- Reads the entire line (with spaces).
+- Reads the entire line (with spaces), means Reads input until the specified delimiter (often \n for Enter key).
+- Returns a string including the delimiter.
+- Can read very long lines, because buffer size is internally managed.
 - Works with os.Stdin.
 - Usually paired with strings.TrimSpace to remove \n.
 
 
-
-
 ## 2.2. Using bufio.Scanner
 
-- Scans input token by token or line by line.
+- Scanner reads input token by token (default: line by line).
 - More control than Scanln, less than Reader.
+- scanner.Scan() advances to next token.
+- scanner.Text() returns the current token as string.
+- Automatically ignores the newline in Text().
+- Simpler when reading line-by-line input interactively.
+- Maximum line length: Default 64 KB
+
+Notes: Quick Rule of Thumb
+- Use Scanner for simple interactive line input.
+- Use Reader.ReadString('\n') when reading large input or files and need exact control.
