@@ -18,3 +18,9 @@ func main() {
 	numbers = []int{1, 2, 3, 4, 5}
 	fmt.Println(numbers)
 }
+
+/* Output:
+[10 20 30 40 50]
+[]
+[1 2 3 4 5]
+*/
