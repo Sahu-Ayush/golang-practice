@@ -1,3 +1,5 @@
+// Embed an Address struct inside Employee. Access the city field directly from the Employee instance,
+
 package main
 
 type Address struct {

@@ -1,3 +1,5 @@
+//Add JSON tags to a Config struct so it marshals to snake_case keys. Marshal it and print the JSON.
+
 package main
 
 import (
