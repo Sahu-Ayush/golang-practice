@@ -15,6 +15,7 @@ func main() {
 		Name: "Ayush",
 		Age:  22,
 	}
+	// fmt.Println(p)
 	fmt.Println(p.Name, p.Age)
 
 	// Print the whole struct value with a formatting verb.
@@ -37,4 +38,6 @@ func main() {
 // Define a struct called "Person" with Name (string) and Age (int). Create one instance and print both fields.
 // Output:
 // Ayush 22
+// {Name:Ayush Age:22}
+// Ayush
 // Ayush
