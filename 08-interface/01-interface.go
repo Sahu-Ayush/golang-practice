@@ -77,3 +77,31 @@ func main() {
 
 	fmt.Println("[main()] Program completed")
 }
+
+// Output:
+[main()] Program started
+
+[main()] Creating Dog object
+[main()] Dog object created:
+    {Rocky}
+
+[main()] Passing Dog into makeSpeak(d)
+[main()] Compiler checks:
+   Does Dog implement Speaker?
+   Dog has speak() method
+   YES -> Dog satisfies Speaker
+
+--------------------------------------------------
+[makeSpeak()] Function started
+[makeSpeak()] Interface contains concrete type:
+    main.Dog
+[makeSpeak()] Interface contains concrete value:
+    {Rocky}
+[makeSpeak()] Calling s.speak()
+[Dog.speak()] Method execution started
+[Dog.speak()] Receiver value: {Rocky}
+[Dog.speak()] Dog says: Woof
+[Dog.speak()] Method execution completed
+[makeSpeak()] Returned from s.speak()
+[makeSpeak()] Function completed
+--------------------------------------------------
